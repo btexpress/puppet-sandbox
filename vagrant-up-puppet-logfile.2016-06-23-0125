@@ -1,0 +1,339 @@
+Bringing machine 'puppet' up with 'virtualbox' provider...
+==> puppet: Importing base box 'ubuntu/trusty64'...
+[KProgress: 40%[KProgress: 90%[K==> puppet: Matching MAC address for NAT networking...
+==> puppet: Checking if box 'ubuntu/trusty64' is up to date...
+==> puppet: Setting the name of the VM: puppet-sandbox_puppet_1466659557069_5606
+==> puppet: Clearing any previously set forwarded ports...
+==> puppet: Clearing any previously set network interfaces...
+==> puppet: Preparing network interfaces based on configuration...
+    puppet: Adapter 1: nat
+    puppet: Adapter 2: hostonly
+==> puppet: Forwarding ports...
+    puppet: 8140 (guest) => 8140 (host) (adapter 1)
+    puppet: 22 (guest) => 2222 (host) (adapter 1)
+==> puppet: Running 'pre-boot' VM customizations...
+==> puppet: Booting VM...
+==> puppet: Waiting for machine to boot. This may take a few minutes...
+    puppet: SSH address: 127.0.0.1:2222
+    puppet: SSH username: vagrant
+    puppet: SSH auth method: private key
+    puppet: 
+    puppet: Vagrant insecure key detected. Vagrant will automatically replace
+    puppet: this with a newly generated keypair for better security.
+    puppet: 
+    puppet: Inserting generated public key within guest...
+    puppet: Removing insecure key from the guest if it's present...
+    puppet: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> puppet: Machine booted and ready!
+GuestAdditions versions on your host (5.0.22) and guest (4.3.36) do not match.
+stdin: is not a tty
+ * Stopping VirtualBox Additions
+   ...done.
+stdin: is not a tty
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  acl at-spi2-core colord dconf-gsettings-backend dconf-service dkms fakeroot
+  fontconfig fontconfig-config fonts-dejavu-core gcc gcc-4.8
+  hicolor-icon-theme libasan0 libasound2 libasound2-data libatk-bridge2.0-0
+  libatk1.0-0 libatk1.0-data libatomic1 libatspi2.0-0 libavahi-client3
+  libavahi-common-data libavahi-common3 libc-dev-bin libc6-dev
+  libcairo-gobject2 libcairo2 libcanberra-gtk3-0 libcanberra-gtk3-module
+  libcanberra0 libcolord1 libcolorhug1 libcups2 libdatrie1 libdconf1
+  libdrm-intel1 libdrm-nouveau2 libdrm-radeon1 libexif12 libfakeroot
+  libfontconfig1 libfontenc1 libgcc-4.8-dev libgd3 libgdk-pixbuf2.0-0
+  libgdk-pixbuf2.0-common libgl1-mesa-dri libgl1-mesa-glx libglapi-mesa
+  libgomp1 libgphoto2-6 libgphoto2-l10n libgphoto2-port10 libgraphite2-3
+  libgtk-3-0 libgtk-3-bin libgtk-3-common libgudev-1.0-0 libgusb2
+  libharfbuzz0b libice6 libieee1284-3 libitm1 libjasper1 libjbig0
+  libjpeg-turbo8 libjpeg8 liblcms2-2 libllvm3.4 libltdl7 libnotify-bin
+  libnotify4 libogg0 libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0
+  libpciaccess0 libpixman-1-0 libquadmath0 libsane libsane-common libsm6
+  libtdb1 libthai-data libthai0 libtiff5 libtsan0 libtxc-dxtn-s2tc0 libv4l-0
+  libv4lconvert0 libvorbis0a libvorbisfile3 libvpx1 libwayland-client0
+  libwayland-cursor0 libx11-xcb1 libxaw7 libxcb-dri2-0 libxcb-dri3-0
+  libxcb-glx0 libxcb-present0 libxcb-render0 libxcb-shm0 libxcb-sync1
+  libxcomposite1 libxcursor1 libxdamage1 libxfixes3 libxfont1 libxi6
+  libxinerama1 libxkbcommon0 libxkbfile1 libxmu6 libxpm4 libxrandr2
+  libxrender1 libxshmfence1 libxt6 libxtst6 libxxf86vm1 linux-libc-dev
+  manpages-dev notification-daemon sound-theme-freedesktop x11-common
+  x11-xkb-utils xfonts-base xfonts-encodings xfonts-utils xserver-common
+  xserver-xorg-core
+Use 'apt-get autoremove' to remove them.
+The following packages will be REMOVED:
+  virtualbox-guest-dkms* virtualbox-guest-utils* virtualbox-guest-x11*
+0 upgraded, 0 newly installed, 3 to remove and 0 not upgraded.
+After this operation, 12.1 MB disk space will be freed.
+(Reading database ... 62989 files and directories currently installed.)
+Removing virtualbox-guest-dkms (4.3.36-dfsg-1+deb8u1ubuntu1.14.04.1) ...
+
+-------- Uninstall Beginning --------
+Module:  virtualbox-guest
+Version: 4.3.36
+Kernel:  3.13.0-88-generic (x86_64)
+-------------------------------------
+
+Status: Before uninstall, this module version was ACTIVE on this kernel.
+
+vboxguest.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/3.13.0-88-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+vboxsf.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/3.13.0-88-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+vboxvideo.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/3.13.0-88-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+depmod....
+
+DKMS: uninstall completed.
+
+------------------------------
+Deleting module version: 4.3.36
+completely from the DKMS tree.
+------------------------------
+Done.
+Removing virtualbox-guest-x11 (4.3.36-dfsg-1+deb8u1ubuntu1.14.04.1) ...
+Purging configuration files for virtualbox-guest-x11 (4.3.36-dfsg-1+deb8u1ubuntu1.14.04.1) ...
+Removing virtualbox-guest-utils (4.3.36-dfsg-1+deb8u1ubuntu1.14.04.1) ...
+Purging configuration files for virtualbox-guest-utils (4.3.36-dfsg-1+deb8u1ubuntu1.14.04.1) ...
+Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+Processing triggers for libc-bin (2.19-0ubuntu6.9) ...
+stdin: is not a tty
+Reading package lists...
+Building dependency tree...
+Reading state information...
+dkms is already the newest version.
+dkms set to manually installed.
+linux-headers-3.13.0-88-generic is already the newest version.
+linux-headers-3.13.0-88-generic set to manually installed.
+The following packages were automatically installed and are no longer required:
+  acl at-spi2-core colord dconf-gsettings-backend dconf-service fontconfig
+  fontconfig-config fonts-dejavu-core hicolor-icon-theme libasound2
+  libasound2-data libatk-bridge2.0-0 libatk1.0-0 libatk1.0-data libatspi2.0-0
+  libavahi-client3 libavahi-common-data libavahi-common3 libcairo-gobject2
+  libcairo2 libcanberra-gtk3-0 libcanberra-gtk3-module libcanberra0 libcolord1
+  libcolorhug1 libcups2 libdatrie1 libdconf1 libdrm-intel1 libdrm-nouveau2
+  libdrm-radeon1 libexif12 libfontconfig1 libfontenc1 libgd3
+  libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common libgl1-mesa-dri libgl1-mesa-glx
+  libglapi-mesa libgphoto2-6 libgphoto2-l10n libgphoto2-port10 libgraphite2-3
+  libgtk-3-0 libgtk-3-bin libgtk-3-common libgudev-1.0-0 libgusb2
+  libharfbuzz0b libice6 libieee1284-3 libjasper1 libjbig0 libjpeg-turbo8
+  libjpeg8 liblcms2-2 libllvm3.4 libltdl7 libnotify-bin libnotify4 libogg0
+  libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpciaccess0
+  libpixman-1-0 libsane libsane-common libsm6 libtdb1 libthai-data libthai0
+  libtiff5 libtxc-dxtn-s2tc0 libv4l-0 libv4lconvert0 libvorbis0a
+  libvorbisfile3 libvpx1 libwayland-client0 libwayland-cursor0 libx11-xcb1
+  libxaw7 libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0 libxcb-present0
+  libxcb-render0 libxcb-shm0 libxcb-sync1 libxcomposite1 libxcursor1
+  libxdamage1 libxfixes3 libxfont1 libxi6 libxinerama1 libxkbcommon0
+  libxkbfile1 libxmu6 libxpm4 libxrandr2 libxrender1 libxshmfence1 libxt6
+  libxtst6 libxxf86vm1 notification-daemon sound-theme-freedesktop x11-common
+  x11-xkb-utils xfonts-base xfonts-encodings xfonts-utils xserver-common
+  xserver-xorg-core
+Use 'apt-get autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Copy iso file /usr/share/virtualbox/VBoxGuestAdditions.iso into the box /tmp/VBoxGuestAdditions.iso
+stdin: is not a tty
+mount: block device /tmp/VBoxGuestAdditions.iso is write-protected, mounting read-only
+Installing Virtualbox Guest Additions 5.0.22 - guest version is 4.3.36
+stdin: is not a tty
+Verifying archive integrity... All good.
+Uncompressing VirtualBox 5.0.22 Guest Additions for Linux............
+VirtualBox Guest Additions installer
+Copying additional installer modules ...
+Installing additional modules ...
+Removing existing VirtualBox DKMS kernel modules ...done.
+Removing existing VirtualBox non-DKMS kernel modules ...done.
+Building the VirtualBox Guest Additions kernel modules ...done.
+Doing non-kernel setup of the Guest Additions ...done.
+Starting the VirtualBox Guest AdditionsInstalling the Window System drivers
+Could not find the X.Org or XFree86 Window System, skipping.
+ ...done.
+stdin: is not a tty
+==> puppet: Checking for guest additions in VM...
+==> puppet: Setting hostname...
+==> puppet: Configuring and enabling network interfaces...
+==> puppet: Mounting shared folders...
+    puppet: /vagrant => /home/wtooles/git-repos/puppet-sandbox
+    puppet: /tmp/vagrant-puppet/modules-5997d7f6297990d24ddcc2a49c98363a => /home/wtooles/git-repos/puppet-sandbox/provision/modules
+    puppet: /tmp/vagrant-puppet/manifests-2c1be6756611028b6f44aed39d040449 => /home/wtooles/git-repos/puppet-sandbox/provision/manifests
+==> puppet: Running provisioner: shell...
+    puppet: Running: /tmp/vagrant-shell20160623-30515-1dzb8nz.sh
+==> puppet: stdin: is not a tty
+==> puppet: Ign http://archive.ubuntu.com trusty InRelease
+==> puppet: Get:1 http://security.ubuntu.com trusty-security InRelease [65.9 kB]
+==> puppet: Get:2 http://archive.ubuntu.com trusty-updates InRelease [65.9 kB]
+==> puppet: Get:3 http://security.ubuntu.com trusty-security/main Sources [116 kB]
+==> puppet: Hit http://archive.ubuntu.com trusty-backports InRelease
+==> puppet: Hit http://archive.ubuntu.com trusty Release.gpg
+==> puppet: Get:4 http://security.ubuntu.com trusty-security/universe Sources [37.3 kB]
+==> puppet: Get:5 http://archive.ubuntu.com trusty-updates/main Sources [277 kB]
+==> puppet: Get:6 http://security.ubuntu.com trusty-security/main amd64 Packages [493 kB]
+==> puppet: Get:7 http://archive.ubuntu.com trusty-updates/restricted Sources [5,352 B]
+==> puppet: Get:8 http://security.ubuntu.com trusty-security/universe amd64 Packages [130 kB]
+==> puppet: Get:9 http://archive.ubuntu.com trusty-updates/universe Sources [156 kB]
+==> puppet: Hit http://security.ubuntu.com trusty-security/main Translation-en
+==> puppet: Get:10 http://archive.ubuntu.com trusty-updates/multiverse Sources [5,936 B]
+==> puppet: Hit http://security.ubuntu.com trusty-security/universe Translation-en
+==> puppet: Get:11 http://archive.ubuntu.com trusty-updates/main amd64 Packages [780 kB]
+==> puppet: Get:12 http://archive.ubuntu.com trusty-updates/restricted amd64 Packages [15.9 kB]
+==> puppet: Get:13 http://archive.ubuntu.com trusty-updates/universe amd64 Packages [362 kB]
+==> puppet: Get:14 http://archive.ubuntu.com trusty-updates/multiverse amd64 Packages [13.2 kB]
+==> puppet: Get:15 http://archive.ubuntu.com trusty-updates/main Translation-en [391 kB]
+==> puppet: Get:16 http://archive.ubuntu.com trusty-updates/multiverse Translation-en [7,227 B]
+==> puppet: Get:17 http://archive.ubuntu.com trusty-updates/restricted Translation-en [3,699 B]
+==> puppet: Get:18 http://archive.ubuntu.com trusty-updates/universe Translation-en [189 kB]
+==> puppet: Get:19 http://archive.ubuntu.com trusty-backports/main Sources [9,551 B]
+==> puppet: Get:20 http://archive.ubuntu.com trusty-backports/restricted Sources [28 B]
+==> puppet: Get:21 http://archive.ubuntu.com trusty-backports/universe Sources [35.2 kB]
+==> puppet: Get:22 http://archive.ubuntu.com trusty-backports/multiverse Sources [1,898 B]
+==> puppet: Hit http://archive.ubuntu.com trusty-backports/main amd64 Packages
+==> puppet: Hit http://archive.ubuntu.com trusty-backports/restricted amd64 Packages
+==> puppet: Hit http://archive.ubuntu.com trusty-backports/universe amd64 Packages
+==> puppet: Hit http://archive.ubuntu.com trusty-backports/multiverse amd64 Packages
+==> puppet: Hit http://archive.ubuntu.com trusty-backports/main Translation-en
+==> puppet: Hit http://archive.ubuntu.com trusty-backports/multiverse Translation-en
+==> puppet: Hit http://archive.ubuntu.com trusty-backports/restricted Translation-en
+==> puppet: Hit http://archive.ubuntu.com trusty-backports/universe Translation-en
+==> puppet: Hit http://archive.ubuntu.com trusty Release
+==> puppet: Get:23 http://archive.ubuntu.com trusty/main Sources [1,064 kB]
+==> puppet: Get:24 http://archive.ubuntu.com trusty/restricted Sources [5,433 B]
+==> puppet: Get:25 http://archive.ubuntu.com trusty/universe Sources [6,399 kB]
+==> puppet: Get:26 http://archive.ubuntu.com trusty/multiverse Sources [174 kB]
+==> puppet: Hit http://archive.ubuntu.com trusty/main amd64 Packages
+==> puppet: Hit http://archive.ubuntu.com trusty/restricted amd64 Packages
+==> puppet: Hit http://archive.ubuntu.com trusty/universe amd64 Packages
+==> puppet: Hit http://archive.ubuntu.com trusty/multiverse amd64 Packages
+==> puppet: Hit http://archive.ubuntu.com trusty/main Translation-en
+==> puppet: Hit http://archive.ubuntu.com trusty/multiverse Translation-en
+==> puppet: Hit http://archive.ubuntu.com trusty/restricted Translation-en
+==> puppet: Hit http://archive.ubuntu.com trusty/universe Translation-en
+==> puppet: Ign http://archive.ubuntu.com trusty/main Translation-en_US
+==> puppet: Ign http://archive.ubuntu.com trusty/multiverse Translation-en_US
+==> puppet: Ign http://archive.ubuntu.com trusty/restricted Translation-en_US
+==> puppet: Ign http://archive.ubuntu.com trusty/universe Translation-en_US
+==> puppet: Fetched 10.8 MB in 7s (1,356 kB/s)
+==> puppet: Reading package lists...
+==> puppet: Reading package lists...
+==> puppet: Building dependency tree...
+==> puppet: Reading state information...
+==> puppet: The following packages were automatically installed and are no longer required:
+==> puppet:   acl at-spi2-core colord dconf-gsettings-backend dconf-service fontconfig
+==> puppet:   fontconfig-config fonts-dejavu-core hicolor-icon-theme libasound2
+==> puppet:   libasound2-data libatk-bridge2.0-0 libatk1.0-0 libatk1.0-data libatspi2.0-0
+==> puppet:   libavahi-client3 libavahi-common-data libavahi-common3 libcairo-gobject2
+==> puppet:   libcairo2 libcanberra-gtk3-0 libcanberra-gtk3-module libcanberra0 libcolord1
+==> puppet:   libcolorhug1 libcups2 libdatrie1 libdconf1 libdrm-intel1 libdrm-nouveau2
+==> puppet:   libdrm-radeon1 libexif12 libfontconfig1 libfontenc1 libgd3
+==> puppet:   libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common libgl1-mesa-dri libgl1-mesa-glx
+==> puppet:   libglapi-mesa libgphoto2-6 libgphoto2-l10n libgphoto2-port10 libgraphite2-3
+==> puppet:   libgtk-3-0 libgtk-3-bin libgtk-3-common libgudev-1.0-0 libgusb2
+==> puppet:   libharfbuzz0b libice6 libieee1284-3 libjasper1 libjbig0 libjpeg-turbo8
+==> puppet:   libjpeg8 liblcms2-2 libllvm3.4 libltdl7 libnotify-bin libnotify4 libogg0
+==> puppet:   libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpciaccess0
+==> puppet:   libpixman-1-0 libsane libsane-common libsm6 libtdb1 libthai-data libthai0
+==> puppet:   libtiff5 libtxc-dxtn-s2tc0 libv4l-0 libv4lconvert0 libvorbis0a
+==> puppet:   libvorbisfile3 libvpx1 libwayland-client0 libwayland-cursor0 libx11-xcb1
+==> puppet:   libxaw7 libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0 libxcb-present0
+==> puppet:   libxcb-render0 libxcb-shm0 libxcb-sync1 libxcomposite1 libxcursor1
+==> puppet:   libxdamage1 libxfixes3 libxfont1 libxi6 libxinerama1 libxkbcommon0
+==> puppet:   libxkbfile1 libxmu6 libxpm4 libxrandr2 libxrender1 libxshmfence1 libxt6
+==> puppet:   libxtst6 libxxf86vm1 notification-daemon sound-theme-freedesktop x11-common
+==> puppet:   x11-xkb-utils xfonts-base xfonts-encodings xfonts-utils xserver-common
+==> puppet:   xserver-xorg-core
+==> puppet: Use 'apt-get autoremove' to remove them.
+==> puppet: 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+==> puppet: Reading package lists...
+==> puppet: Building dependency tree...
+==> puppet: Reading state information...
+==> puppet: screen is already the newest version.
+==> puppet: telnet is already the newest version.
+==> puppet: The following packages were automatically installed and are no longer required:
+==> puppet:   acl at-spi2-core colord dconf-gsettings-backend dconf-service fontconfig
+==> puppet:   fontconfig-config fonts-dejavu-core hicolor-icon-theme libasound2
+==> puppet:   libasound2-data libatk-bridge2.0-0 libatk1.0-0 libatk1.0-data libatspi2.0-0
+==> puppet:   libavahi-client3 libavahi-common-data libavahi-common3 libcairo-gobject2
+==> puppet:   libcairo2 libcanberra-gtk3-0 libcanberra-gtk3-module libcanberra0 libcolord1
+==> puppet:   libcolorhug1 libcups2 libdatrie1 libdconf1 libdrm-intel1 libdrm-nouveau2
+==> puppet:   libdrm-radeon1 libexif12 libfontconfig1 libfontenc1 libgd3
+==> puppet:   libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common libgl1-mesa-dri libgl1-mesa-glx
+==> puppet:   libglapi-mesa libgphoto2-6 libgphoto2-l10n libgphoto2-port10 libgraphite2-3
+==> puppet:   libgtk-3-0 libgtk-3-bin libgtk-3-common libgudev-1.0-0 libgusb2
+==> puppet:   libharfbuzz0b libice6 libieee1284-3 libjasper1 libjbig0 libjpeg-turbo8
+==> puppet:   libjpeg8 liblcms2-2 libllvm3.4 libltdl7 libnotify-bin libnotify4 libogg0
+==> puppet:   libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpciaccess0
+==> puppet:   libpixman-1-0 libsane libsane-common libsm6 libtdb1 libthai-data libthai0
+==> puppet:   libtiff5 libtxc-dxtn-s2tc0 libv4l-0 libv4lconvert0 libvorbis0a
+==> puppet:   libvorbisfile3 libvpx1 libwayland-client0 libwayland-cursor0 libx11-xcb1
+==> puppet:   libxaw7 libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0 libxcb-present0
+==> puppet:   libxcb-render0 libxcb-shm0 libxcb-sync1 libxcomposite1 libxcursor1
+==> puppet:   libxdamage1 libxfixes3 libxfont1 libxi6 libxinerama1 libxkbcommon0
+==> puppet:   libxkbfile1 libxmu6 libxpm4 libxrandr2 libxrender1 libxshmfence1 libxt6
+==> puppet:   libxtst6 libxxf86vm1 notification-daemon sound-theme-freedesktop x11-common
+==> puppet:   x11-xkb-utils xfonts-base xfonts-encodings xfonts-utils xserver-common
+==> puppet:   xserver-xorg-core
+==> puppet: Use 'apt-get autoremove' to remove them.
+==> puppet: Suggested packages:
+==> puppet:   git-daemon-run git-daemon-sysvinit git-doc git-el git-email git-gui gitk
+==> puppet:   gitweb git-arch git-bzr git-cvs git-mediawiki git-svn zip
+==> puppet: The following NEW packages will be installed:
+==> puppet:   git git-man liberror-perl unzip
+==> puppet: 0 upgraded, 4 newly installed, 0 to remove and 0 not upgraded.
+==> puppet: Need to get 3,463 kB of archives.
+==> puppet: After this operation, 22.3 MB of additional disk space will be used.
+==> puppet: Get:1 http://archive.ubuntu.com/ubuntu/ trusty/main liberror-perl all 0.17-1.1 [21.1 kB]
+==> puppet: Get:2 http://archive.ubuntu.com/ubuntu/ trusty-updates/main git-man all 1:1.9.1-1ubuntu0.3 [699 kB]
+==> puppet: Get:3 http://archive.ubuntu.com/ubuntu/ trusty-updates/main git amd64 1:1.9.1-1ubuntu0.3 [2,586 kB]
+==> puppet: Get:4 http://archive.ubuntu.com/ubuntu/ trusty-updates/main unzip amd64 6.0-9ubuntu1.5 [157 kB]
+==> puppet: dpkg-preconfigure: unable to re-open stdin: No such file or directory
+==> puppet: Fetched 3,463 kB in 1s (2,579 kB/s)
+==> puppet: Selecting previously unselected package liberror-perl.
+==> puppet: (Reading database ... 62714 files and directories currently installed.)
+==> puppet: Preparing to unpack .../liberror-perl_0.17-1.1_all.deb ...
+==> puppet: Unpacking liberror-perl (0.17-1.1) ...
+==> puppet: Selecting previously unselected package git-man.
+==> puppet: Preparing to unpack .../git-man_1%3a1.9.1-1ubuntu0.3_all.deb ...
+==> puppet: Unpacking git-man (1:1.9.1-1ubuntu0.3) ...
+==> puppet: Selecting previously unselected package git.
+==> puppet: Preparing to unpack .../git_1%3a1.9.1-1ubuntu0.3_amd64.deb ...
+==> puppet: Unpacking git (1:1.9.1-1ubuntu0.3) ...
+==> puppet: Selecting previously unselected package unzip.
+==> puppet: Preparing to unpack .../unzip_6.0-9ubuntu1.5_amd64.deb ...
+==> puppet: Unpacking unzip (6.0-9ubuntu1.5) ...
+==> puppet: Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+==> puppet: Processing triggers for mime-support (3.54ubuntu1.1) ...
+==> puppet: Setting up liberror-perl (0.17-1.1) ...
+==> puppet: Setting up git-man (1:1.9.1-1ubuntu0.3) ...
+==> puppet: Setting up git (1:1.9.1-1ubuntu0.3) ...
+==> puppet: Setting up unzip (6.0-9ubuntu1.5) ...
+==> puppet: Running provisioner: shell...
+    puppet: Running: inline script
+==> puppet: stdin: is not a tty
+==> puppet: Running provisioner: shell...
+    puppet: Running: /tmp/vagrant-shell20160623-30515-gnpght.sh
+==> puppet: stdin: is not a tty
+==> puppet: mv: 
+==> puppet: cannot stat ‘/etc/apt/sources.list.d/puppetlabs.list’
+==> puppet: : No such file or directory
+==> puppet: --2016-06-23 05:27:30--  https://apt.puppetlabs.com/puppetlabs-release-trusty.deb
+==> puppet: Resolving apt.puppetlabs.com (apt.puppetlabs.com)... 
+==> puppet: 192.155.89.90, 2600:3c03::f03c:91ff:fedb:6b1d
+==> puppet: Connecting to apt.puppetlabs.com (apt.puppetlabs.com)|192.155.89.90|:443... 
+==> puppet: connected.
+==> puppet: Running provisioner: shell...
